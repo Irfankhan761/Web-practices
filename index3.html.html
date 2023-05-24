@@ -17,18 +17,39 @@
     <h3>3:innerHTML()</h3>
     </p>
 <div id="a" class="same">
-    <p>hello iam student</p>
+    <p>hello iam student in 2000</p>
 </div>
 
 <div id="b" class="same"> 
-    <p>hello iam not student</p>
+    <p>hello iam teacher in 2010</p>
 </div>
 </body>
 <SCript>
+                    //id
+//getting data
+//object give in console (id ko target krka element ka object return krta ha )
+// var std= document.getElementById("a");
+// console.log(std);
 
-var std= document.getElementById("a").innerHTML="hi im teacher";
-var de=document.getElementsByClassName("samec").innerHTML="khan";
-// prompt("are you give right info","Yes/No")
+//return html with tags if tag exist
+// var std= document.getElementById("a").innerHTML;
+// console.log(std);
+
+// putting data(change the html text due to inner html on web page)
+//  document.getElementById("a").innerHTML="<h1>iam student</h1>";
+
+                //class
+        
+//class -> key [0],[1] etc
+// var std=document.getElementsByClassName("same")[0].innerHTML;
+// alert(std);
+
+//change or swap postion od div 0 and 1 
+var std=document.getElementsByClassName("same")[0].innerHTML="iam teacher in 2010";
+var std=document.getElementsByClassName("same")[1].innerHTML='iam student in 2000';
+
+
+
 
     
 </SCript>
