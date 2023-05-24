@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops and arrays</h1>
+    <script>
+        // let name=['Irfan','Mnk','Atta','Asim'];
+        //  for(let i=0;i<name.length;i++){
+        //     console.log(name[i])
+        //  }
+
+        let no=[1,2,3,4,5,6,7,8,9,10];
+        for(let i=0;i<no.length;i++){
+            ele=no[i];
+            console.log('This is No'+ele)
+        }
+      
+        let num=[1,2,3,4,5,6,7,8,9,10];
+        function myfun(){
+            for(let i=0;i<num.length;i++){
+                ans=num[i]*2;
+                console.log(2+"*"+num[i]+"="+ans);
+            }
+        }
+        myfun()
+
+
+        const names=['irfan','Usama','Mnnk','Salman'];
+        names.forEach(function names(item) {
+            console.log("Hello my Friend"+item)
+        })
+
+
+        const ansss=[2,3,4,323,5323,32,3];
+        for(item of ansss){
+            console.log(item)
+        }
+
+
+
+
+        let student= {
+            name:"Irfan",
+            reg:070,
+            class:"BSE6",
+        }
+
+        for(item in student){
+            console.log(`The ${item} of student is ${student[item]}`)
+        }
+
+        let tab={
+            n1:1,
+            n2:2,
+            n3:3,
+            n4:4,
+            n5:5,
+            n6:6,
+            n7:7,
+            n8:8,
+            n9:9,
+            n10:10,
+        }
+        for(item in tab){
+             ans = tab[item]*2;
+            console.log(`2x${tab[item]}=${ans}`)
+        }
+
+
+
+
+        let emp={
+            name:"Irfan Khan",
+            sal:15000,
+            des:"Teacher",
+        
+        }
+
+        for(item in emp){
+            console.log(`The ${item} of employess is ${emp[item]}`)
+        }
+    </script>
+</body>
+</html>

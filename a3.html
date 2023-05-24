@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        color: white;
+        background-color: red;
+        padding: 10px;
+        margin:  10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+    <!-- Browser envents
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+    submit
+    focus
+
+    DmconentLoaded
+     -->
+     <div class="con">
+        <h1>This my Heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita eius nostrum, id tempora porro ab, doloribus voluptatem deserunt ducimus asperiores explicabo vero qui, illo ullam nulla. Atque error unde veniam aspernatur exercitationem? A incidunt ipsam sint exercitationem, neque maiores, quo temporibus ratione nostrum eveniet animi, sit provident molestiae iure deserunt magni tempore. Ratione optio ea quae, eveniet voluptate ipsum cumque perferendis reiciendis ullam doloremque saepe dolores quod fuga placeat eos modi porro, beatae quo. Iure deserunt neque odio enim. Hic assumenda beatae perspiciatis harum perferendis facere voluptatibus, ullam cum similique asperiores accusamus sapiente quas ipsa amet distinctio odit, magni ducimus laboriosam quod pariatur necessitatibus autem aut blanditiis. Sapiente, est. Beatae rerum officia quis, fugiat voluptatem blanditiis voluptate veniam necessitatibus est! Quas temporibus, quo placeat voluptatum veniam odio, similique accusamus eos vel perferendis quaerat a facilis ipsam, magni rem? Nulla numquam, sunt recusandae vel placeat necessitatibus id repellat voluptas excepturi nostrum delectus obcaecati laborum facere aliquid odit nesciunt adipisci velit! Obcaecati voluptate deleniti mollitia perspiciatis amet pariatur eaque, impedit at sint, doloremque laboriosam suscipit velit quas sed est. Quam suscipit facere porro pariatur dolore facilis ducimus alias unde magnam. Magnam iure asperiores fuga praesentium saepe, ab molestias quasi nulla illo dignissimos cum. Cumque sequi voluptate, dolorem ipsam ratione animi excepturi, impedit beatae, fugit tempore placeat enim saepe quae illo omnis error. Aspernatur, consequuntur? Optio minus ullam officia voluptatibus, pariatur ipsum nam assumenda rem nobis.</p>
+
+     </div>
+      <button id="btn" onclick="hide()">show/hide</button>
+    
+
+
+
+
+
+
+
+
+
+
+
+      
+      <script>
+        function undide(){
+            let para = document.getElementById("btn");
+        }
+        function hide(){
+        //     let btn=document.getElementById('btn');
+        //    let para = document.getElementById("para");
+           if(para.style.display!="none"){
+            para.style.display="none";
+           }
+           else{
+            para.style.display="block";
+           }
+           
+        }
+      </script>
+</body>
+</html>

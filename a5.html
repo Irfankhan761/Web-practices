@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1"></h1>
+    <script>
+        document.getElementById('id1').innerHTML="<h1>Var let const If else switch case</h1>"
+    
+    const age=100;
+    if(age>28) {
+        console.log("Your age is greater than 18");
+    }   
+    else if(age==18){
+        console.log("you are age is equa;l to 18");
+    }
+    else{
+        console.log("your age is not valid to apply")
+    }
+
+
+    const day='tuesday';
+    switch(day){
+        case "sundays":
+        console.log("This is Sunday");
+        break;
+        case 'monday':
+            console.log("This is monday");
+            break;
+
+        case "tuesday":
+            console.log("this is Tuesday");
+            break;
+            default:
+                console.log("The day is not found");
+                break;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javacript 3 main dom functions:(document object method )</h2>
+    <p> what is dom? <br>
+        1:Access and modify HTML elements: With the DOM, you can retrieve elements by their ID, class name, tag name, or other attributes, and then manipulate their content, attributes, and styles. <br>
+        2:Manipulate the structure of a document: You can create, remove, or modify elements, attributes, and text nodes within the document. This enables dynamic updates and changes to the web page based on user interactions or other events. <br>
+        3:Respond to events: The DOM allows you to register event handlers for various user interactions (like clicking a button or submitting a form) or other events (such as the page finishing loading). This way, you can write JavaScript code to respond to these events and perform actions accordingly. <br>
+    <h3>1:document.getElementById()</h3>
+    <h3>2:document.getElementByClassName() [0],[1] for position target</h3>
+    <h3>3:innerHTML()</h3>
+    </p>
+<div id="a" class="same">
+    <p>hello iam student</p>
+</div>
+
+<div id="b" class="same"> 
+    <p>hello iam not student</p>
+</div>
+</body>
+<SCript>
+
+var std= document.getElementById("a").innerHTML="hi im teacher";
+var de=document.getElementsByClassName("samec").innerHTML="khan";
+// prompt("are you give right info","Yes/No")
+
+    
+</SCript>
+</html>
