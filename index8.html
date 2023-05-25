@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Logical and ternary operator</h2>
+    <p>logical operator are those which based on human logic to implement</p><br>
+    <h4>&& (Logical AND) [both true] </h4>
+    <h4>|| (Logicol OR) [atlaeast 1 true]</h4>
+    <p>Ternary operator are those involve 3 operands</p>
+    <h4>(2>3)?"YEs":"No"</h4>
+
+    <h1 id="ans"></h1>
+</body>
+<script>
+    // and operator (&&) if both true/1
+    // var x= 1;//0 0 1 true false false  true
+    // var y= 0;//1 0 1 false true false  true
+    // var z= x && y;
+    // document.getElementById("ans").innerHTML=z;
+
+    // Or operator
+    // var x= 1;//0 0 1 true false false  true
+    // var y= 0;//1 0 1 false true false  true
+    // var z= x ||y
+    // document.getElementById("ans").innerHTML=z;
+
+
+    // condition?"yes":"no"
+    var x = 1;//0 0 1 true false false  true
+    var y = 0;//1 0 1 false true false  true
+
+
+    var z = (x > y) ? "yes" : "No"
+    document.getElementById("ans").innerHTML = z;
+
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in java script</h1>
+    <p>Fuction are group of code which is use repeatedely to. it leads programming to code reusablity and clean code</p>
+    <h5>types</h5>
+    <p> 1: predifine function: already made alert/prompt/console.log/confirm etc </p>
+    <p>2: User define Function: function which are define by user</p>
+    <p>does not mention return type in js </p>
+  <h3 id="a"></h3>
+ <!-- no1 -->
+ <!-- <input type="text" class="name" id="name"> <br>
+ <button onclick="greet()">click</button>
+ <div id="a">
+
+ </div> -->
+ 
+ 
+ <!-- no 2 -->
+  <input placeholder="enter no to find table" type="text" id="no" class="no">
+ <button onclick="tab()">Click</button>
+ <div id="alltab"></div>
+    
+</body>
+
+<script>
+    // no1
+    // function greet(){
+    //     var nam=document.getElementById("name").value;
+    //     var str="Hello every one" + nam;
+    //     document.getElementById("a").innerHTML=str;
+    // }
+    // no 2
+   
+    function tab(){
+        var num=document.getElementById("no").value;
+        var res="";
+        for(let i = 1;i<=10;i++){
+        res+= num+"*"+i+"="+num*i+'<br>';
+        document.getElementById("alltab").innerHTML=res;
+        }
+    }
+    
+
+
+
+</script>
+</html>

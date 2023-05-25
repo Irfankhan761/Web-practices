@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>take no input from user when press on button show in result table of input no using While loop</h2>
+    <input placeholder="Enter no" type="text" class="num" id="num">
+    <button onclick="calculatTable()">Find Table</button>
+    <div id="a">
+
+    </div>
+    
+</body>
+<script >
+    function calculatTable(){
+        var num=document.getElementById("num").value;
+        var ans="";
+        var i=1;
+        while(i<=10){
+            ans+=num+"*"+i+"="+num*i+"<br>";
+            i++;
+            document.getElementById("a").innerHTML=ans;
+        }
+        
+    }
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" class="num1"><br><br>
+    <input type="number" id="num2" class="num2"><br><br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="div()">div</button>
+    <button onclick="mul()">mul</button>
+    <h1 style="border: 2px solid black; padding: 20px; width: 16%;" id="res" class="res"></h1>
+</body>
+<script>
+    function add(){
+         // var n1=parseInt(document.getElementById("num1").value);
+        // var n1=parseInt(document.getElementById("num1").value);
+        var n1=document.getElementById("num1").value;
+        n1=parseInt(n1);
+        var n2=document.getElementById("num2").value;
+        n2=parseInt(n2);
+        var ans=n1+n2;
+        document.getElementById("res").innerHTML=ans;
+    }
+    function sub(){
+        const n1=document.getElementById("num1").value;
+        const n2=document.getElementById("num2").value;
+        var ans=n1-n2;
+        document.getElementById("res").innerHTML=ans;
+    }
+    function div(){
+        const n1=document.getElementById("num1").value;
+        const n2=document.getElementById("num2").value;
+       const ans=n1/n2;
+        document.getElementById("res").innerHTML=ans;
+    }
+    function mul(){
+        const n1=document.getElementById("num1").value;
+        const n2=document.getElementById("num2").value;
+       const ans=n1*n2;
+        document.getElementById("res").innerHTML=ans;
+    }
+</script>
+</html>
