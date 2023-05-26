@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Conditional statements in js </h1>
+    <p>Q: Write a program that you can apply for job if your age is greater than or equals 18 and less than or equals to 35,</p>
+     <input placeholder="Enter Your Age" type="text" class="age" id="age"><br><br>
+    <button onclick="elegible()">Check</button><br><br>
+    <input type="text" class="res" id="res" readonly="">
+    
+</body>
+<script>
+    function elegible(){
+        var age=document.getElementById("age").value;
+if(age >=18 && age<=35){
+        document.getElementById("res").value="Yes you are Eleigible"
+    }
+ else if (age>100){
+    document.getElementById("res").value="Suppose die"
+ }
+ else{
+    document.getElementById("res").value="You are Not Eleigible"
+ }
+
+    }
+  
+
+</script>
+</html>

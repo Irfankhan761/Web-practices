@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>Q: Take input 1 and 2 from user and when press button perform +,-,x,/.
+        Then show result in 3rd input box with readonly.
+        then find the table of that 3rd input box;
+    </p>
+    <input type="number" class="num1" id="num1" step="any">
+    <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" class="num2" id="num2" step="any"> <br><br>
+
+    <button onclick="cal()">calculate</button>
+    <input type="text" name="" id="res" readonly=""/><br><br>
+    <button onclick="calculatTable()">Find Table</button>
+    <div id="a">
+
+    </div>
+</body>
+<script>
+  
+    function cal(){
+       var num1=document.getElementById("num1").value;
+       var num2=document.getElementById("num2").value;
+       num1=parseInt(num1);
+       num2=parseInt(num2);
+       var operator=document.getElementById("operator").value;
+       
+       
+       if(operator == "+"){
+        var res= num1+num2;
+       }
+       if(operator == "-"){
+        var res= num1-num2;
+       }
+       if(operator == "*"){
+        var res= num1*num2;
+       }
+       if(operator == "/"){
+        var res= num1/num2
+       }
+       if(operator == "%"){
+        var res= num1%num2
+       }
+       document.getElementById("res").value=res;
+       
+    }
+    function calculatTable(){
+        var num=document.getElementById("res").value;
+        var ans="";
+        var i=1;
+        while(i<=10){
+            ans+=num+"*"+i+"="+num*i+"<br>";
+            i++;
+            
+        }
+        document.getElementById("a").innerHTML=ans;
+        
+    }
+</script>
+</html>
