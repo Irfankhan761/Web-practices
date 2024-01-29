@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainConatiner {
+    position: absolute;
+    background-color: rgb(38, 35, 35);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+
+
+}
+
+.subContainer {
+    position: relative;
+    bottom: 120px;
+    /* width: 30%; */
+    padding: 10px;
+    height: 50%;
+    border: 1PX solid white;
+    margin: auto;
+    background-color: rgb(20, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subContainer span {
+    font-size: 27px;
+}
+
+.inputTextField {
+    margin-top: 20px;
+}
+
+.inputTextField input {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 11px;
+    width: 300px;
+}
+
+.addBtn {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+
+}
+
+.addBtn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+.counterTask{
+    margin-left:3px ;
+
+}
+
+.mainToDo {
+    position: relative;
+    top: 10px;
+    /* border: 1px solid white; */
+    width: 100%;
+    /* height: 50%; */
+    height: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.itemTodo {
+    /* position: relative;
+    top: 20px; */
+    border: 1px solid white;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(7, 7, 61);
+    color: white;
+    align-items: center;
+    /* width: 98%; */
+    /* margin: auto; */
+    margin-top: 15px;
+    margin-right:8px ;
+    margin-bottom: 5px;
+}
+
+.checkBoxToDo {
+    /* cursor: pointer; */
+    width: 15px;    
+ 
+}
+.pText{
+    width: 340px;
+
+}
+
+.userInputs {
+    position: relative;
+    left: 15px;
+    width: 300px;
+    font-size: 18px;
+    overflow: hidden; 
+    text-align: justify;
+    
+
+}
+.btn{
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+    margin: 3px;
+    
+
+}
+.editBtn{
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: green;
+    z-index: 1;
+    
+
+}
+.editBtn:hover{
+    background-color: rgb(108, 155, 39);
+}
+
+
+.delBtn {
+    width: 45px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: red;
+    z-index: 1;
+}
+
+.delBtn:hover {
+    background-color: rgb(129, 44, 44);
+    cursor: pointer;
+
+}
