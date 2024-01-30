@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun and Cloud Animation Using Css3 Properties</title>
+    <style>
+       
+        .main{
+            width: 100%;
+            height: 250px;
+            border: 2px solid black;
+            background-image: url(./road.png);
+            position: relative;
+        }
+        .box{
+            margin-top: 10px;
+            position:absolute;
+            top: 0px;
+            left: -28px;
+            animation: anm 2s ease-in 2s infinite forwards ;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes anm {
+            from{
+                left:0px;
+                top: 0px;
+
+            }
+            to{
+                left: 90%;
+                top: 0px;
+            }
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <img class="im" src="./car-removebg-preview.png" alt="" width="180px">
+        </div>
+    </div>
+    
+</body>
+</html>

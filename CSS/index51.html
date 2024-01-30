@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>Media Quries:-Changing Column Width Based on Screen Size</title>
+    <style>
+        .inner {
+            width: 1170px;
+            margin: auto;
+        
+            border: 1px solid red;
+
+        }
+        .col{
+            width: 23%;
+            margin: 1%;
+            background-color: gray;
+            float: left;
+            text-align: center;
+        }
+        .col img{
+            width: 100%;
+        }
+        .clear{
+            clear: both;
+        }
+        /* Tablets */
+        @media only screen and (min-width:568px) and (max-width:992px) {
+            .inner{
+                width: 100%;
+            }
+            .col{
+            width: 48%;
+            margin: 1%;
+            /* width: 96%;
+            margin: 2%; */
+        }
+            
+        }
+        /* Mobile  */
+        @media only screen and (min-width:200px) and (max-width:567px) {
+            .inner{
+                width: 100%;
+            }
+            .col{
+            width: 48%;
+            margin: 1%;
+            /* width: 96%;
+            margin: 2%; */
+        }
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="col">
+            <img src="./car.jfif" alt="" >
+            <h3>Demo</h3>
+        </div>
+        <div class="col">
+            <img src="./car.jfif" alt="" >
+            <h3>Demo</h3>
+        </div>
+        <div class="col">
+            <img src="./car.jfif" alt="" >
+            <h3>Demo</h3>
+        </div>
+        <div class="col">
+            <img src="./car.jfif" alt="" >
+            <h3>Demo</h3>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>

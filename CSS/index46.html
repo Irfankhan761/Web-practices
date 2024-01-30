@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice using annimation</title>
+    <style>
+        .main {
+            width: 700px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: red;
+            animation: box 7s;
+            position: absolute;
+        }
+        h1{
+            color: white;
+        }
+
+        #an_linear {
+            animation-timing-function: linear;
+
+        }
+
+        #an_ease {
+            animation-timing-function: ease;
+        }
+
+        #an_ease-in {
+            animation-timing-function: ease-in;
+        }
+
+        #an_ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        #an_ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes box {
+            from {
+                left: 0px;
+
+            }
+
+            to {
+                left: 500px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="an_linear">
+            <h1>linear</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box" id="an_ease">
+            <h1>ease</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box" id="an_ease-in">
+            <h1>ease-in</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box" id="an_ease-out">
+            <h1>ease-out</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box" id="an_ease-in-out">
+            <h1>ease-in-out</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

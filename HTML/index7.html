@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+</head>
+
+<body>
+    <!-- by default _parent -->
+    <a href="https://www.youtube.com/">Go to Youtube</a><br><br>
+    <!-- go to new tab -->
+    <a href="https://www.facebook.com/" target="_blank">Go to Facebook</a>
+    <br><br>
+    <!-- own file  -->
+    <a href="./index1.html" target="_blank">Blank target image</a><br><br>
+    <a href="./index1.html" target="_parent">Parent target image</a><br><br>
+    <a href="../CSS/download.jfif">download image</a><br><br>
+    <a onclick="myfun()" id="b" href="">img</a><br><br>
+</body>
+<script>
+    const myfun = () => {
+        img = "../CSS/download.jfif";
+        document.getElementById("b").href = img
+    }
+</script>
+
+</html>

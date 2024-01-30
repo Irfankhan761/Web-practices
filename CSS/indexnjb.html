@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outermost {
+            border: 10px solid black;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+
+        }
+
+        .inner {
+            border: 10px solid yellow;
+            height: fit-content;
+            width: fit-content
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="inner">
+            <div class="inner">
+                <div class="inner">
+                    <div class="inner">
+                        <div class="inner">
+                            <div class="inner">
+                                <div class="inner">
+                                    <div class="inner">
+                                        <div class="inner">
+                                            <div class="inner">
+                                                <div class="inner">
+                                                    <div class="inner">
+                                                        <div style="width: 500px;height: 500px;">
+                                                            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fRQbEslh0rpcBJ0oCcgGVaDJAzX32qwEXg&usqp=CAU"
+                                                                style="width: 100%; height: 100%;" /> -->
+                                                         <!-- <img src="./irf.jpg" alt="" style="width: 100%; height: 100%;">
+                                                            </div> -->
+                                                            <!-- <img src="./usama.jpg" alt="" style="width: 100%; height: 100%;"> -->
+                                                            <img src="./nawaz.jpg" alt="" style="width: 100%; height: 100%;">
+                                                            </div>
+                                                            </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function assignColors() {
+            var divs = document.getElementsByClassName("inner");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.border = `10px solid rgb(${parseInt(Math.random() * 255)},${parseInt(Math.random() * 255)},${parseInt(Math.random() * 255)})`;
+            }
+        }
+
+
+        let time = 100;
+        for (let i = 0; i < 1000; i++) {
+
+
+            time += 500;
+
+            setTimeout(() => {
+
+
+                assignColors();
+            }, time)
+        }
+
+
+
+
+
+//    setInterval(()=>{assignColors()},100)
+
+    </script>
+</body>
+
+</html>
