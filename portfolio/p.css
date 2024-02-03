@@ -1,0 +1,817 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, serif;
+}
+
+/* Navbar section */
+.navbar {
+    width: 100%;
+    display: flex;
+    color: orangered;
+    box-shadow: 2px 2px 29px rgb(180, 178, 178);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* Set your desired background color */
+    z-index: 1000;
+}
+
+.leftNavbar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 27px;
+    margin-top: 10px;
+}
+
+.humberger {
+    display: none;
+}
+
+.humBtn {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+}
+
+.rightNavbar {
+    width: 70%;
+}
+
+.navList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    right: 28px;
+    z-index: 1;
+}
+
+.list {
+    list-style: none;
+    transition: ease-in-out 0.3s;
+}
+
+.list:hover {
+    scale: 1.2;
+}
+
+.navBtn {
+    text-decoration: none;
+    color: orangered;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+
+
+@media only screen and (max-width:766px) {
+
+    .leftNavbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .humberger {
+        display: block;
+        margin-right: 1rem;
+
+    }
+
+    .rightNavbar {
+        width: auto;
+    }
+
+    .navList {
+        flex-direction: column;
+        position: absolute;
+        top: 3.6rem;
+        right: 0;
+        background-color: orangered;
+        height: 100vh;
+        justify-content: start;
+        display: none;
+    }
+
+    .list {
+        margin-top: 20px;
+    }
+
+    .list img {
+        margin-top: -5px;
+        margin-left: 20px;
+
+    }
+
+    .navBtn {
+        color: white;
+        font-size: 18px;
+    }
+
+    .hideShow {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+
+    .logo {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .navBtn {
+        font-size: 22px;
+        margin-top: 5px;
+
+    }
+}
+
+/* Home Section CSS */
+.homePage {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.leftHome {
+    width: 55%;
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.rightHome {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rightHome img {
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width:766px) {
+    .homePage {
+        display: block;
+        width: 100%;
+    }
+
+    .leftHome {
+        width: 80%;
+        font-size: 23px;
+        margin-left: 40px;
+        margin-top: 20px;
+        position: relative;
+        top: 260px;
+        z-index: -1;
+
+    }
+
+    .rightHome {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .rightHome img {
+        position: absolute;
+        top: 80px;
+        left: 60px;
+        width: 250px;
+        height: 250px;
+
+    }
+
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+    .homePage {
+        width: 92%;
+        align-items: flex-start;
+        position: relative;
+        top: 120px;
+
+    }
+
+    .leftHome {
+        width: 50%;
+        font-size: 25px;
+
+    }
+
+    .rightHome {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightHome img {
+        width: 340px;
+        height: 340px;
+    }
+
+
+}
+
+/* line section */
+.line {
+    background-color: orangered;
+    width: 98%;
+    height: 75px;
+    font-size: 60px;
+    margin-left: 12PX;
+    justify-content: center;
+    color: white;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    position: relative;
+    top: 40px;
+    margin-top: 40px;
+
+
+}
+
+.lineHeading {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:376px) {
+    .line {
+        position: relative;
+        top: 140px;
+        height: 45px;
+        font-size: 40px;
+
+    }
+}
+
+@media only screen and (min-width:377px) and (max-width:766px) {
+    .line {
+        height: 55px;
+        font-size: 45px;
+
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+    .line {
+        height: 55px;
+        font-size: 45px;
+
+    }
+}
+
+/*  Skill Section  */
+.skillPage {
+    width: 94%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+}
+
+.skillDetail {
+
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.skillDetail img {
+    width: 80px;
+    height: 80px;
+}
+
+.skillname {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.skilldescription {
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+@media only screen and (max-width:376px) {
+    .skillPage {
+        flex-direction: column;
+        margin-top: 85px;
+    }
+
+    .skillDetail {
+        width: 80%;
+    }
+
+    .skillDetail img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .skillname {
+        font-size: 20px;
+    }
+
+    .skilldescription {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width:377px) and (max-width:766px) {
+    .skillPage {
+        flex-direction: column;
+    }
+
+    .skillDetail {
+        width: 80%;
+    }
+
+    .skillDetail img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .skillname {
+        font-size: 20px;
+    }
+
+    .skilldescription {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+
+
+    .skillDetail {
+
+        width: 45%;
+
+
+    }
+
+    .skillDetail img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+}
+
+/* Projects Section */
+.projectPage {
+    width: 94%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+
+
+}
+
+.projectItems {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projectItems img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.projectName {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.projectDescription {
+    margin-top: 5px;
+    font-size: 17px;
+    text-align: justify;
+
+}
+
+.projectBtn {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+
+}
+
+.sourceDemoBtn {
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px;
+
+}
+
+
+@media only screen and (max-width:376px) {
+    .projectPage {
+        display: flex;
+        flex-direction: column;
+        margin-top: 85px;
+
+
+
+    }
+
+    .projectItems {
+        width: 96%;
+        margin: auto;
+        margin-top: 20px;
+
+
+    }
+
+    .projectItems img {
+        width: 280px;
+        height: 180px;
+
+    }
+
+    .projectName {
+        font-size: 16px;
+    }
+
+    .projectDescription {
+        margin-top: 13px;
+        font-size: 15px;
+        text-align: justify;
+
+    }
+
+
+
+    .sourceDemoBtn {
+        font-size: 15px;
+        padding: 5px;
+
+    }
+
+}
+
+@media only screen and (min-width:377px) and (max-width:766px) {
+    .projectPage {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .projectItems {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+
+
+    }
+
+    .projectItems img {
+        width: 290px;
+        height: 190px;
+
+    }
+
+    .projectName {
+        font-size: 18px;
+    }
+
+    .projectDescription {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: justify;
+
+    }
+
+    .sourceDemoBtn {
+        font-size: 18px;
+        padding: 7px;
+
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+
+    .projectItems {
+        width: 47%;
+        margin: auto;
+        margin-top: 20px;
+
+
+    }
+
+    .projectItems img {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .projectName {
+        margin-top: 20px;
+        font-size: 18px;
+
+    }
+
+    .projectDescription {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: justify;
+
+    }
+
+
+
+    .sourceDemoBtn {
+        font-size: 20px;
+        padding: 7px;
+
+    }
+}
+
+/* Contact Page */
+.contactPage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+}
+
+.contactType {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.contactType img {
+    height: 80px;
+    width: 80px;
+}
+
+.myInfo {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.contctBtn {
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px;
+
+}
+
+@media only screen and (max-width:376px) {
+
+    .contactPage {
+        flex-direction: column;
+        margin-top: 85px;
+    }
+
+    .contactType {
+        width: 96%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    .contactType img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .myInfo {
+        font-size: 20px;
+
+    }
+
+    .contctBtn {
+
+        font-size: 15px;
+
+        padding: 5px;
+
+    }
+}
+
+@media only screen and (min-width:377px) and (max-width:766px) {
+    .contactPage {
+        flex-direction: column;
+
+    }
+
+    .contactType {
+        width: 96%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    .contactType img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .myInfo {
+        font-size: 23px;
+
+    }
+
+    .contctBtn {
+
+        font-size: 23px;
+
+        padding: 6px;
+
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1023px) {
+    
+
+    .contactType {
+        width: 45%;
+        margin-top: 20px;
+
+    }
+
+    .contactType img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .myInfo {
+        font-size: 24px;
+
+    }
+
+    .contctBtn {
+
+        font-size: 24px;
+
+        padding: 7px;
+
+    }
+}
+/* Footer Section */
+.footer{
+    background-color: orangered;
+    color: white;
+    position: relative;
+    top: 100px;
+    border-top-right-radius: 80px;
+    width: 99.9%;
+    display: flex;
+    align-items: center;
+   
+
+}
+.footer img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid orange;
+    border-radius: 100px;
+    margin-left: 20px;
+
+}
+.footerHeading{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 50px;
+
+}
+.footerPara{
+    font-size: 27px;
+    margin-left: 30px;
+}
+@media only screen and (max-width:376px) {
+    
+    .footer img{
+        width: 70px;
+        height: 70px; 
+        margin-left: 10px;
+    }
+    .footerHeading{
+        
+        font-size: 18px;
+        margin-left: 5px;
+    
+    }
+    .footerPara{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+    @media only screen and (min-width:377px) and (max-width:766px) {
+        
+        .footer img{
+            width: 75px;
+            height: 75px; 
+            margin-left: 10px;
+        }
+        .footerHeading{
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 2px;
+        
+        }
+        .footerPara{
+            font-size: 15px;
+            margin-left: 0px;
+        }
+    }
+       
+
+    @media only screen and (min-width:767px) and (max-width:1023px) {
+        .footer img{
+            width: 95px;
+            height: 95px; 
+            margin-left: 10px;
+        }
+        .footerHeading{
+            font-size: 25px;
+            margin-left: 8px;
+        
+        }
+        .footerPara{
+            font-size: 20px;
+            margin-left: 7px;
+        }
+    }
+    

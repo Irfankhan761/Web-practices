@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: orangered;
+    font-size: 30px;
+    box-shadow: 2px 2px 29px rgb(180, 178, 178);
+    z-index: 1;
+    background-color: white;
+
+}
+
+body {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Adjust this value based on the height of your fixed header */
+}
+
+.logo {
+    width: 100%;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+
+}
+.logo:hover{
+
+
+    scale: 1.1;
+}
+
+#navbar {
+
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+    justify-content: flex-end;
+    margin: -20px;
+
+}
+
+.anchor {
+    display: flex;
+    text-decoration: none;
+    color: orangered;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 23px;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+.anchor:hover {
+    /* background-color: orangered;
+    color: white;
+    border-radius: 10px; */
+
+    scale: 1.2;
+    
+  
+}
+
+.dark {
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+/* home page */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 99%; */
+    width: 99%;
+    margin-top: 40px;
+    
+    /* border: 2px solid black; */
+}
+
+.lefthome {
+    text-align: justify;
+    /* height: 100%; */
+    width: 50%;
+    /* margin-top: 200px;
+    margin-right: 200px; */
+    font-size: 30px;
+    /* border: 2px solid black; */
+}
+
+.righthome {
+    /* height: 100%; */
+    width: 20%;
+    
+    /* margin: 5px; */
+    /* border: 2px solid green; */
+
+}
+
+
+
+/* for all line */
+.line {
+    background-color: orangered;
+    /* height: 99%; */
+    width: 100vw;
+    margin-top: 100px;
+    /* margin-left: 10px; */
+    font-size: 60px;
+    color: white;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+
+}
+.centered{
+
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* for skills section */
+
+/* .skills {
+    display: flex;
+    margin-top: 40px;
+    width: 99%;
+    height: 100%;
+    border: 2px solid black;
+
+}
+
+.skillset {
+    border: 1px solid orangered;
+    width: 33%;
+    height: 100%;
+    background-color: yellowgreen;
+} */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 40px;
+    width: 97%;
+    margin-left: 45px;
+}
+
+.skillset {
+    width: 30%;
+
+    /* flex: 0 0 calc(30.33% - 20px); */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.skillname {
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skilldescription {
+    margin-left: -13px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* project section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 97%;
+    margin-left: 45px;
+}
+
+.projectitem {
+    flex: 0 0 calc(30.33% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.projectname {
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.projectdescription {
+    margin-left: -13px;
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.sourcebtn {
+    margin-top: 20px;
+    margin-left: -340px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sourcebtn:hover {
+    background-color: rgb(196, 73, 28);
+}
+
+/* Contac Section */
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 97%;
+    margin-left: 45px;
+}
+
+.contact {
+    flex: 0 0 calc(30.33% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.myinfo {
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: rgb(196, 73, 28);
+}
+
+/* footer */
+.footer {
+    display: flex;
+    background-color: orangered;
+    /* height: 99%; */
+    width: 99.9%;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    border-top-right-radius: 80px;
+
+
+}
+
+.imgfoot {
+    border: 2px solid orange;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+.footertext {
+    margin-left: 25px;
+    margin-top: 45px;
+    font-size: 27px;
+}
+
+.footerheadtext {
+    margin-left: 25px;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+@media  only screen  and (max-width:768px) {
+    .skillset {
+
+
+        width: 80%;
+    }
+    .homepage {
+        flex-direction: column;
+        width: 100vw;
+        border: 2px solid green;
+   
+    }
+
+    .righthome {
+        margin-top: 30px;
+    }
+
+    .lefthome {
+        width:80vw;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .skillset {
+        width: 40%;
+    }
+
+
+
+}
