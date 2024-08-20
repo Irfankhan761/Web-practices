@@ -19,7 +19,7 @@
 // Input: func = () => expect(5).notToBe(null)
 // Output: {"value": true}
 // Explanation: 5 !== null so this expression returns true.
-
+"use strict";
 var expect = function (val) {
   return {
     toBe: function (other) {

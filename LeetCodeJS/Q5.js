@@ -21,7 +21,7 @@
 // Input: arr = [10,20,30], fn = function constant() { return 42; }
 // Output: [42,42,42]
 // Explanation: The function always returns 42.
-
+"use strict";
 var map = function (arr, fn) {
   let returnedArray = [];
   for (let i = 0; i < arr.length; i++) {

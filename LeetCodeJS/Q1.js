@@ -21,7 +21,7 @@
 
 // Constraints:
 // 0 <= args.length <= 10
-
+"use strict";
 var createHelloWorld = function () {
   return function () {
     // console.log(arguments); //or Using Rest Parameters: ...args

@@ -49,7 +49,7 @@
 // 0 <= nums.length <= 1000
 // 0 <= nums[i] <= 1000
 // 0 <= init <= 1000
-
+"use strict";
 var reduce = function (nums, fn, init) {
   let result = init;
   if (nums.length === 0) {

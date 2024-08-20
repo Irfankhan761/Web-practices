@@ -33,7 +33,7 @@
 // Constraints:
 // 0 <= arr.length <= 1000
 // -109 <= arr[i] <= 109
-
+"use strict";
 var filter = function (arr, fn) {
   const filteredArr = [];
   for (let i = 0; i < arr.length; i++) {
