@@ -3,7 +3,6 @@
 // Understanding JavaScript's data types is crucial because you'll use them frequently in React to manage state, props, and more.
 // Primitive Data Types: string, number, boolean, null, undefined, symbol.
 // Complex Data Types: object, array, function.
-
 let name = "John"; // string
 let age = 30; // number
 let isStudent = true; // boolean
@@ -15,7 +14,6 @@ let hobbies = ["reading", "gaming"]; // array
 
 // 2. Using var, let, and const
 // Understanding the differences between var, let, and const is important for managing variable scope and avoiding common bugs.
-
 // var: Function-scoped, can be redeclared and updated.
 // let: Block-scoped, can be updated but not redeclared.
 // const: Block-scoped, cannot be updated or redeclared.
@@ -34,6 +32,7 @@ example();
 
 //3. Using Objects, Arrays, and Functions
 // Understanding how to work with objects, arrays, and functions is fundamental in React since these are the core structures for managing data and logic.
+
 // Object
 let user = {
   name: "John",
