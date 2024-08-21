@@ -1,6 +1,6 @@
 // Function Transformations
 
-//Q10: Allow One Function Call
+// Q10: Allow One Function Call
 // Given a function fn, return a new function that is identical to the original function except that it ensures fn is called at most once.
 // The first time the returned function is called, it should return the same result as fn.
 // Every subsequent time it is called, it should return undefined.
@@ -27,7 +27,7 @@
 // 1 <= calls.length <= 10
 // 1 <= calls[i].length <= 100
 // 2 <= JSON.stringify(calls).length <= 1000
-
+"use strict";
 const once = function (fn) {
   let called = false;
   let result;
@@ -48,14 +48,14 @@ const fn1 = function (a, b, c) {
   return a + b + c;
 };
 const onceFn1 = once(fn1);
-console.log(onceFn1(1, 2, 3)); // Output: 6
-console.log(onceFn1(2, 3, 6)); // Output: undefined
+console.log(onceFn1(1, 2, 3));
+console.log(onceFn1(2, 3, 6));
 
 // Example 2:
 const fn2 = function (a, b, c) {
   return a * b * c;
 };
 const onceFn2 = once(fn2);
-console.log(onceFn2(5, 7, 4)); // Output: 140
-console.log(onceFn2(2, 3, 6)); // Output: undefined
-console.log(onceFn2(4, 6, 8)); // Output: undefined
+console.log(onceFn2(5, 7, 4));
+console.log(onceFn2(2, 3, 6));
+console.log(onceFn2(4, 6, 8));
