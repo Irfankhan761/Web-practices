@@ -4,6 +4,7 @@ function Bag(props) {
     border: "1px solid gray",
     background: "#fff",
     margin: "20px 0",
+    color: "green",
   };
   return <div style={bag}>{props.children}</div>;
 }

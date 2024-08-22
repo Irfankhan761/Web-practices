@@ -8,12 +8,21 @@ import Foot from "./components/Footer";
 import Bag from "./components/Bag";
 import Apples from "./components/Apples";
 import Pears from "./components/Pears";
+import Formatedname from "./components/Formatedname";
+import Ternary from "./components/Ternary";
+import ExpressionsAndProps from "./components/ExpressionsAndProps";
+import car from "./assets/car.png";
+import { Logo, CurrentLogo } from "./components/Logo";
+import MultipleComponents from "./MultipleComponents";
+
 function Heading2() {
   return <h2 className=" text-blue-600">This is Heading 2</h2>;
 }
 const Heading3 = () => <h3>hello</h3>;
 
 function App() {
+  const bool = false;
+
   return (
     <div>
       <div className=" flex  justify-center bg-gray-800">
@@ -43,7 +52,34 @@ function App() {
       <Intro1 />
       <Intro2 />
       <Intro3 />
+      <h1 className=" flex  justify-center text-4xl font-bold text-orange-700">
+        3. Styling Methods
+      </h1>
       <Promo />
+      <h1 className=" flex  justify-center text-4xl font-bold text-orange-700">
+        4. Embedded JSX expressions
+      </h1>
+      <Formatedname first="Irfan" second="Khan" />
+      <Formatedname first="khan" second="Irfan" />
+      <h1 className=" flex  justify-center text-4xl font-bold text-orange-700">
+        5. Ternary operators and functions in JSX
+      </h1>
+      <Ternary name="Irfan" />
+      <Ternary name="khanrfan" />
+      <h1 className=" flex  justify-center text-4xl font-bold text-orange-700">
+        6. Expression and Props
+      </h1>
+      <ExpressionsAndProps toggleBoolean={!bool} />
+      <h1 className=" flex  justify-center text-4xl font-bold text-orange-700">
+        6. Embedding in attributes (Logo)
+      </h1>
+      <p>Image passed from App.js through props</p>
+      <Logo car={car} />
+      <p>Image passed directly render in Logo components without props</p>
+      <CurrentLogo />
+      <a href="">
+        <MultipleComponents />
+      </a>
       <Foot name="Irfan Khan" />
     </div>
   );
