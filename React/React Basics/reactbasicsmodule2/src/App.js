@@ -4,6 +4,7 @@ import EventHandlingAndEmbeddedExpressions from "./components/EventHandlingAndEm
 import UserEvent from "./components/UserEvent";
 import DyanmicEvents from "./components/DyanmicEvents";
 import ParentsChildDataFlow from "./components/ParentsChildDataFlow";
+import DfInReact from "./components/DfInReact";
 function App() {
   return (
     <div className="App ">
@@ -27,6 +28,10 @@ function App() {
         Parent-Child Data Flow
       </h1>
       <ParentsChildDataFlow />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        Data Flow In React
+      </h1>
+      <DfInReact />
     </div>
   );
 }
