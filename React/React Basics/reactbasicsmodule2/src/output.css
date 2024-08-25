@@ -576,16 +576,16 @@ video {
   --tw-ring-opacity: 0.75;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .ml-1 {
   margin-left: 0.25rem;
 }
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-5 {
@@ -602,10 +602,6 @@ video {
 
 .h-12 {
   height: 3rem;
-}
-
-.w-2\/4 {
-  width: 50%;
 }
 
 .justify-center {
