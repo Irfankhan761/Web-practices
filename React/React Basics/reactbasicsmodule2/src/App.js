@@ -8,6 +8,7 @@ import DfInReact from "./components/DfInReact";
 import DateComp from "./components/DateComp";
 import HookComp from "./components/HookComp";
 import Counter from "./components/CounterApp";
+import RegisterForm from "./components/Form";
 function App() {
   const date = new Date();
   return (
@@ -49,6 +50,10 @@ function App() {
         Counter APP
       </h1>
       <Counter />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        Registration Form
+      </h1>
+      <RegisterForm />
     </div>
   );
 }
