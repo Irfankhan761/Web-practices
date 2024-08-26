@@ -19,7 +19,7 @@ function EventsAndTypes() {
         onCLick
       </button>
 
-      <button className="btn-primary ml-1" onClick={hndleBtnOnMouseOver}>
+      <button className="btn-primary ml-1" onMouseOver={hndleBtnOnMouseOver}>
         onMouseOver
       </button>
     </div>

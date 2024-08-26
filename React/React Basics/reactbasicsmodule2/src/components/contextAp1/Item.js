@@ -1,0 +1,25 @@
+import React, { useContext, useState } from "react";
+import { MealsContext } from "./MealsProvider";
+
+export default function Item(props) {
+  const { handleUpdateCount } = useContext(MealsContext);
+  const [status, setStatus] = useState("Eat it");
+
+  const handleClick = () => {
+    if (status !== "Eaten!") {
+      setStatus("Eaten!");
+      handleUpdateCount();
+    }
+  };
+
+  return (
+    <div>
+      <h2 className="border-black border-2 p-1 m-1 w-full">
+        {props.meal}, {props.calories} calories
+      </h2>
+      <button className="btn-primary mt-1 w-full" onClick={handleClick}>
+        {status}
+      </button>
+    </div>
+  );
+}

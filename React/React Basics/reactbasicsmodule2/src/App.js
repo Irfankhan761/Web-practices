@@ -12,6 +12,10 @@ import RegisterForm from "./components/Form";
 import TextInputWithFocusButton from "./components/HookUseRef";
 import StateComp from "./components/StateComp";
 import ManagingState from "./components/SmallAppManaginState/Page";
+import ManagingState2 from "./components/contextAp1/ManagingState";
+import UseReducerComp from "./components/UseReducerHook/UseReducerComp";
+import MainLab from "./components/StateLab/MainLab";
+
 function App() {
   const date = new Date();
   return (
@@ -69,6 +73,18 @@ function App() {
         Managing State Small App
       </h1>
       <ManagingState />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        Managing State using Context Api
+      </h1>
+      <ManagingState2 />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        useReducer hook
+      </h1>
+      <UseReducerComp />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        Managing State Lab Task
+      </h1>
+      <MainLab />
     </div>
   );
 }
