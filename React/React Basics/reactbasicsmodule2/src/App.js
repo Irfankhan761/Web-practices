@@ -10,6 +10,8 @@ import HookComp from "./components/HookComp";
 import Counter from "./components/CounterApp";
 import RegisterForm from "./components/Form";
 import TextInputWithFocusButton from "./components/HookUseRef";
+import StateComp from "./components/StateComp";
+import ManagingState from "./components/SmallAppManaginState/Page";
 function App() {
   const date = new Date();
   return (
@@ -56,9 +58,17 @@ function App() {
       </h1>
       <RegisterForm />
       <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
-        USe Ref
+        useRef
       </h1>
       <TextInputWithFocusButton />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        State- React.useState
+      </h1>
+      <StateComp />
+      <h1 className="bg-purple-700 text-4xl text-orange-600 font-bold mt-2 border-rose-700 rounded-t-full border-x-8 border-solid text-center h-12 shadow-lg shadow-neutral-400 ">
+        Managing State Small App
+      </h1>
+      <ManagingState />
     </div>
   );
 }
