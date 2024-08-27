@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Link, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import { Contact } from "./components/Contact";
+import ProductivityApp from "./components/ProductivityApp";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div className="flex justify-center items-center bg-slate-700 text-pink-700 font-bold text-4xl  space-x-8 p-2 rounded-3xl shadow-lg w-4/5 mx-auto">
+        <Link
+          to="/"
+          className="cursor-pointer border-2 border-pink-700 rounded-3xl px-6 py-2 hover:bg-pink-700 hover:text-slate-700 transition duration-300"
         >
-          Learn React
-        </a>
-      </header>
+          Home
+        </Link>
+        <Link
+          to="/aboutme"
+          className="cursor-pointer border-2 border-pink-700 rounded-3xl px-6 py-2 hover:bg-pink-700 hover:text-slate-700 transition duration-300"
+        >
+          About
+        </Link>
+        <Link
+          to="/contactme"
+          className="cursor-pointer border-2 border-pink-700 rounded-3xl px-6 py-2 hover:bg-pink-700 hover:text-slate-700 transition duration-300"
+        >
+          Contact
+        </Link>
+        <Link
+          to="/ProductivityApp"
+          className="cursor-pointer border-2 border-pink-700 rounded-3xl px-6 py-2 hover:bg-pink-700 hover:text-slate-700 transition duration-300"
+        >
+          Productivity
+        </Link>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<About />} />
+        <Route
+          path="/contactme"
+          element={
+            <Contact className="font-bold text-purple-900" name="Irfan Khan" />
+          }
+        />
+        <Route path="/ProductivityApp" element={<ProductivityApp />} />
+      </Routes>
     </div>
   );
 }
