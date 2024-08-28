@@ -26,5 +26,3 @@ export default function ProductivityApp() {
     </div>
   );
 }
-// For workdays, the message is: “Get it done”
-// For weekends, the message is: “Get some rest
