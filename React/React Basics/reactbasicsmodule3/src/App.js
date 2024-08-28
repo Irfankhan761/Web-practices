@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import { Contact } from "./components/Contact";
 import ProductivityApp from "./components/ProductivityApp";
+
+import ConLogoutLogIn from "./components/subcomponents/ConLogoutLogIn";
 function App() {
   return (
     <div>
@@ -32,6 +34,12 @@ function App() {
         >
           Productivity
         </Link>
+        <Link
+          to="/logincont"
+          className="cursor-pointer border-2 border-pink-700 rounded-3xl px-6 py-2 hover:bg-pink-700 hover:text-slate-700 transition duration-300"
+        >
+          Login
+        </Link>
       </div>
 
       <Routes>
@@ -44,6 +52,7 @@ function App() {
           }
         />
         <Route path="/ProductivityApp" element={<ProductivityApp />} />
+        <Route path="/logincont" element={<ConLogoutLogIn isLogin={false} />} />
       </Routes>
     </div>
   );
